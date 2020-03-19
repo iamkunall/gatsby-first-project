@@ -6,9 +6,6 @@ import Seo from '../components/Seo';
 import Layout from '../components/Layout';
 
 const Section = styled.div`
-  .container {
-    margin-top: 4rem;
-  }
   p {
     margin-bottom: 1rem;
   }
@@ -30,7 +27,7 @@ const Contact = () => (
       <div className="container">
         <div className="columns is-centered">
           <div className="column is-two-fifths">
-            <h2 className="title is-1 has-text-weight-bold">Contact Us</h2>
+            <h2 className="title is-1 has-text-weight-bold">Address</h2>
             <p>
               We’re as accessible as your good neighbour. Feel free
               <br />

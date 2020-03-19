@@ -3,7 +3,7 @@ import Slider from 'react-slick';
 import styled from 'styled-components';
 import CourseCard from './CourseCard';
 
-const Conatiner = styled.div`
+const Container = styled.div`
   .wrapper {
     padding-bottom: 1rem;
     margin-bottom: 5%;
@@ -12,9 +12,12 @@ const Conatiner = styled.div`
     padding-bottom: 1rem;
     border-bottom: 2px solid black;
   }
+  .slick-initialized .slick-slide {
+    outline: none !important;
+  }
 `;
 
-export default class CrouseSlider extends Component {
+export default class CourseSlider extends Component {
   render() {
     const settings = {
       dots: true,
@@ -22,7 +25,7 @@ export default class CrouseSlider extends Component {
       speed: 500,
       slidesToShow: 3,
       slidesToScroll: 3,
-      autoplay: true,
+      autoplay: false,
       autoplaySpeed: 6000,
       cssEase: 'linear',
       initialSlide: 0,
@@ -56,7 +59,7 @@ export default class CrouseSlider extends Component {
       ],
     };
     return (
-      <Conatiner className="section">
+      <Container className="section">
         <div className="container has-text-centered">
           <div className="wrapper">
             <h1 className="title is-2 is-spaced">Popular Courses</h1>
@@ -68,37 +71,29 @@ export default class CrouseSlider extends Component {
             </h5>
           </div>
           <Slider {...settings}>
-            <div>
-              <CourseCard
-                image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTg55f5ZQMzrnRRozjJl9TUZgPj8sgiN7cjuPtm4XUDRswPY51g"
-                title="WEB Development "
-                Subtitle="your text "
-              />
-            </div>
-            <div>
-              <CourseCard
-                image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWNgH4KSVgac1tvU04IUBljT_peJC6DBgycSV2npX6bPhRkGjU"
-                title="APP Development "
-                Subtitle="your text "
-              />
-            </div>
-            <div>
-              <CourseCard
-                image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_VHK6uG5diWQVBQnZlV74to0Uyq0rmghnh_PDgm3IzNw2xXGppQ "
-                title="Airthmatics"
-                Subtitle="your text "
-              />
-            </div>
-            <div>
-              <CourseCard
-                image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIsoyV66dxk_Om-VPmIMwkXfnjRq7C8ObQ3HIPlVA3ykzRcLqm9Q"
-                title="Web Designs"
-                Subtitle="your text "
-              />
-            </div>
+            <CourseCard
+              image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTg55f5ZQMzrnRRozjJl9TUZgPj8sgiN7cjuPtm4XUDRswPY51g"
+              title="WEB Development "
+              Subtitle="your text "
+            />
+            <CourseCard
+              image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWNgH4KSVgac1tvU04IUBljT_peJC6DBgycSV2npX6bPhRkGjU"
+              title="APP Development "
+              Subtitle="your text "
+            />
+            <CourseCard
+              image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_VHK6uG5diWQVBQnZlV74to0Uyq0rmghnh_PDgm3IzNw2xXGppQ "
+              title="Airthmatics"
+              Subtitle="your text "
+            />
+            <CourseCard
+              image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIsoyV66dxk_Om-VPmIMwkXfnjRq7C8ObQ3HIPlVA3ykzRcLqm9Q"
+              title="Web Designs"
+              Subtitle="your text "
+            />
           </Slider>
         </div>
-      </Conatiner>
+      </Container>
     );
   }
 }

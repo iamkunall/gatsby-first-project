@@ -4,7 +4,9 @@ import Seo from '../components/Seo';
 import Layout from '../components/Layout';
 import HomeSlider from '../components/HomeSlider';
 import HomeHero from '../components/HomeHero';
-import CrouseSlider from '../components/CoursesSlider';
+import CourseSlider from '../components/CoursesSlider';
+import AboutSection from '../components/AboutSection';
+import Contact from '../components/Contact';
 
 export default class IndexPage extends React.Component {
   render() {
@@ -13,7 +15,9 @@ export default class IndexPage extends React.Component {
         <Seo title="Home" description="Welcome to GatsbyJs v1" />
         <HomeSlider />
         <HomeHero />
-        <CrouseSlider />
+        <CourseSlider />
+        <AboutSection />
+        <Contact />
       </Layout>
     );
   }

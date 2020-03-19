@@ -36,9 +36,6 @@ const GlobalStyle = createGlobalStyle`
   .button {
     font-family: ${theme.secondaryFontFamily};
   }
-  p {
-    line-height: 1.5rem;
-  }
 
 `;
 
