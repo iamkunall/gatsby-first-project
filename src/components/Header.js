@@ -38,7 +38,7 @@ const Section = styled.section`
     border-radius: 4px;
   }
   .icon {
-    color: #4fa8b8;
+    color: ${props => props.theme.mainBrandColor};
     font-size: 2rem;
     margin-right: 0.75rem;
     transition: color 0.5s;

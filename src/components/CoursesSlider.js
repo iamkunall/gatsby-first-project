@@ -8,10 +8,6 @@ const Container = styled.div`
     padding-bottom: 1rem;
     margin-bottom: 5%;
   }
-  .wrapper span {
-    padding-bottom: 1rem;
-    border-bottom: 2px solid black;
-  }
   .slick-initialized .slick-slide {
     outline: none !important;
   }

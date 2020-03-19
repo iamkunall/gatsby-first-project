@@ -36,9 +36,6 @@ const Container = styled.div`
       padding-top: 1rem;
       font-size: 3rem;
     }
-
-
-
 `;
 
 const HomeSlider = () => {

@@ -6,6 +6,7 @@ import HomeSlider from '../components/HomeSlider';
 import HomeHero from '../components/HomeHero';
 import CourseSlider from '../components/CoursesSlider';
 import AboutSection from '../components/AboutSection';
+import Testimonials from '../components/Testimonial';
 import Contact from '../components/Contact';
 
 export default class IndexPage extends React.Component {
@@ -17,6 +18,7 @@ export default class IndexPage extends React.Component {
         <HomeHero />
         <CourseSlider />
         <AboutSection />
+        <Testimonials />
         <Contact />
       </Layout>
     );

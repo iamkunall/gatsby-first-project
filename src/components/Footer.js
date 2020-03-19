@@ -2,36 +2,69 @@ import React from 'react';
 import styled from 'styled-components';
 import { Link } from 'gatsby';
 
-const Section = styled.div`
-  .container {
-    margin-top: 4rem;
+const StyledFooter = styled.footer`
+  img {
+    height: 10rem;
+  }
+  .icon {
+    font-size: 2rem;
+    margin-right: 1.75rem;
+    color: ${props => props.theme.mainBrandColor};
+    border-radius: 1rem;
+    :last-child {
+      margin-right: 0rem;
+    }
   }
   p {
-    margin-bottom: 1rem;
-  }
-  .first {
     margin-top: 2rem;
   }
-  .title.is-4 {
-    margin-top: 1rem;
+  .columns.is-mobile {
+    margin-top: 2rem;
   }
 `;
 
 const Footer = () => (
-  <footer className="footer">
+  <StyledFooter className="footer">
     <div className="content has-text-centered">
+      <Link to="/" className="is-block">
+        <img src="/images/logo.jpg" alt="site logo" />
+      </Link>
+      <div className="icon ">
+        <i className="fab fa-facebook-square" />
+      </div>
+      <div className="icon">
+        <i className="fab fa-twitter-square" />
+      </div>
+      <div className="icon">
+        <i className="fab fa-linkedin" />
+      </div>
+      <div className="columns is-mobile is-centered">
+        <div className="column is-8">
+          <div className="columns">
+            <div className="column">
+              <Link to="/" className="title is-5">
+                scholarship Test
+              </Link>
+            </div>
+            <div className="column">
+              <Link to="/" className="title is-5">
+                Courses we Offered
+              </Link>
+            </div>
+            <div className="column">
+              <Link to="/" className="title is-5">
+                About us
+              </Link>
+            </div>
+          </div>
+        </div>
+      </div>
       <p>
-        <strong>Bulma</strong> by <a href="https://jgthms.com">Jeremy Thomas</a>
-        . The source code is licensed
-        <a href="http://opensource.org/licenses/mit-license.php">MIT</a>. The
-        website content is licensed{' '}
-        <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">
-          CC BY NC SA 4.0
-        </a>
-        .
+        © 2020 Ramanujan academy | Made with ❤️ in Punjab, India, and on the
+        Internet.
       </p>
     </div>
-  </footer>
+  </StyledFooter>
 );
 
 export default Footer;
