@@ -5,15 +5,15 @@ import styled from 'styled-components';
 import { Link } from 'gatsby';
 
 const Section = styled.section`
-  padding: 1rem 1.5rem;
-  font-family: ${props => props.theme.primaryFontFamily};
+  padding: 0.5rem 1.5rem;
+  font-family: ${props => props.theme.secondaryFontFamily};
   .navbar {
     background-color: transparent;
   }
   .navbar-brand {
     margin-right: 20px;
     .navbar-item img {
-      max-height: 3.75rem;
+      max-height: 9rem;
     }
   }
   .navbar-menu {
@@ -27,7 +27,8 @@ const Section = styled.section`
     font-weight: 700;
     font-size: 1.2rem;
     :hover {
-      color: ${props => props.theme.darkAccent};
+      color: ${props => props.theme.mainBrandColor};
+      background-color: transparent !important;
     }
   }
   .navbar-burger {
@@ -35,6 +36,15 @@ const Section = styled.section`
     color: #fff;
     opacity: 0.6;
     border-radius: 4px;
+  }
+  .icon {
+    color: #4fa8b8;
+    font-size: 2rem;
+    margin-right: 0.75rem;
+    transition: color 0.5s;
+    :hover {
+      color: #000000;
+    }
   }
 `;
 
@@ -68,7 +78,7 @@ export default class Header extends React.Component {
           >
             <div className="navbar-brand">
               <Link className="navbar-item" to="/">
-                <img src="/images/logo-1024.png" alt="site logo" />
+                <img src="/images/logo.jpg" alt="site logo" />
               </Link>
               <a
                 href="#"
@@ -93,15 +103,34 @@ export default class Header extends React.Component {
                 <Link to="/" className="navbar-item">
                   Home
                 </Link>
-                <Link to="/about" className="navbar-item">
-                  About
+                <Link to="/Courses" className="navbar-item">
+                  Courses
                 </Link>
                 <Link to="/news" className="navbar-item">
-                  News
+                  Admission
                 </Link>
                 <Link to="/contact" className="navbar-item">
-                  Contact
+                  About us
                 </Link>
+                <Link to="/contact" className="navbar-item">
+                  Blogs
+                </Link>
+                <Link to="/contact" className="navbar-item">
+                  Contact us
+                </Link>
+              </div>
+              <div className="navbar-end">
+                <div className="navbar-item">
+                  <div className="icon ">
+                    <i className="fab fa-facebook-square" />
+                  </div>
+                  <div className="icon">
+                    <i className="fab fa-twitter-square" />
+                  </div>
+                  <div className="icon">
+                    <i className="fab fa-linkedin" />
+                  </div>
+                </div>
               </div>
             </div>
           </nav>
