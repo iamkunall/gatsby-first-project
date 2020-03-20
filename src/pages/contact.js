@@ -4,6 +4,7 @@ import styled from 'styled-components';
 import config from '../utils/config';
 import Seo from '../components/Seo';
 import Layout from '../components/Layout';
+import ContactForm from '../components/ContactForm';
 
 const Section = styled.div`
   p {
@@ -16,6 +17,9 @@ const Section = styled.div`
     object-position: center;
   }
   .button {
+    margin-top: 2rem;
+  }
+  .column.is-8 {
     margin-top: 2rem;
   }
 `;
@@ -51,16 +55,14 @@ const Contact = () => (
               </span>{' '}
               <a href={`tel:${config.telephone}`}>{config.telephone}</a>
             </p>
-            <p className="control">
-              <a href="#">
-                <button type="submit" className="button is-secondary is-medium">
-                  Get in touch
-                </button>
-              </a>
-            </p>
           </div>
           <div className="column is-two-fifths">
             <img className="image" src="/images/contact.svg" alt="contact us" />
+          </div>
+        </div>
+        <div className="columns is-centered">
+          <div className="column is-8">
+            <ContactForm />
           </div>
         </div>
       </div>
