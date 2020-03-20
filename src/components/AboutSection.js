@@ -2,7 +2,9 @@ import React from 'react';
 import styled from 'styled-components';
 import { Link } from 'gatsby';
 
-const Section = styled.div``;
+const Section = styled.div`
+  background: #eaf0f1;
+`;
 
 const AboutSection = () => (
   <Section className="section">
