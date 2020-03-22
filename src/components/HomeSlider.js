@@ -4,7 +4,7 @@ import { Carousel } from 'react-responsive-carousel';
 import styled from 'styled-components';
 
 const Container = styled.div`
-  background-color: white;
+  /* background-color: white; */
   margin-bottom: 5rem;
 
   .carousel.carousel-slider {
@@ -12,7 +12,7 @@ const Container = styled.div`
   }
 
   .first {
-    height: 30rem;
+    height: 50rem;
   }
 
   .own {
@@ -24,7 +24,7 @@ const Container = styled.div`
     position: absolute;
     left: 0px;
     top: 0px;
-    opacity: 0.4;
+    height:80%rem;
   }
 
 
@@ -52,22 +52,20 @@ const HomeSlider = () => {
         transitionTime={400}
       >
         <div className="first">
-          <img
-            src="https://colorlib.com/preview/theme/academics/images/hero_1.jpg"
-            alt="hello"
-          />
+          <img src="/images/image-one.png" alt="hello" />
+          /*{' '}
           <h1 className=" has-text-weight-bold has-text-white-bis is-family-sans-serif own">
             Just A random text
-          </h1>
+          </h1>{' '}
+          */
         </div>
         <div className="first">
-          <img
-            src="https://colorlib.com/preview/theme/academics/images/hero_1.jpg"
-            alt="hello"
-          />
+          <img src="/images/image-two.png" alt="hello" />
+          /*{' '}
           <h1 className=" has-text-weight-bold has-text-white-bis is-family-sans-serif own">
             You can Learn Anything
-          </h1>
+          </h1>{' '}
+          */
         </div>
       </Carousel>
     </Container>

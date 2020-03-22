@@ -6,6 +6,7 @@ const Wrapper = styled.div`
   img {
     border-radius: 100%;
     z-index: 1;
+    height: 5rem;
   }
   .card {
     z-index: -1;
@@ -17,7 +18,7 @@ const Wrapper = styled.div`
 
 const TestimonialsCard = () => (
   <Wrapper className="has-text-centered">
-    <img src="https://bulma.io/images/placeholders/128x128.png" />
+    <img src="/images/test.jpg" />
     <div className="card">
       <div className="card-content">
         <p className="title is-5">

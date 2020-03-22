@@ -2,8 +2,8 @@ import React from 'react';
 
 import Seo from '../components/Seo';
 import Layout from '../components/Layout';
-import HomeSlider from '../components/HomeSlider';
 import HomeHero from '../components/HomeHero';
+import HomeFeatures from '../components/HomeFeatures';
 import CourseSlider from '../components/CoursesSlider';
 import AboutSection from '../components/AboutSection';
 import Testimonials from '../components/Testimonial';
@@ -14,8 +14,8 @@ export default class IndexPage extends React.Component {
     return (
       <Layout>
         <Seo title="Home" description="Welcome to GatsbyJs v1" />
-        <HomeSlider />
         <HomeHero />
+        <HomeFeatures />
         <CourseSlider />
         <AboutSection />
         <Testimonials />

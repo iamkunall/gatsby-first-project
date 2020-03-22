@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import { Link } from 'gatsby';
 
 const StyledFooter = styled.footer`
-  background: #dae0e2;
+  background: #f2f2f2;
   img {
     height: 10rem;
   }

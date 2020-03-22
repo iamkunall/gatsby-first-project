@@ -11,7 +11,45 @@ const Container = styled.div`
   .slick-initialized .slick-slide {
     outline: none !important;
   }
+  .slick-list {
+    padding-bottom: 2rem;
+  }
+  .card {
+    height: 35rem;
+    width: auto;
+  }
 `;
+
+const data = [
+  {
+    title: 'Class 11th Non-Medical',
+    image: '/images/courses/maths.png',
+  },
+  {
+    title: 'Class 11th Medical',
+    image: '/images/courses/biolog-11.jpg',
+  },
+  {
+    title: 'Class 12th Non-Medical',
+    image: '/images/courses/maths-12.png',
+  },
+  {
+    title: 'Class 12th Medical',
+    image: '/images/courses/medical-12.png',
+  },
+  {
+    title: '8th,9th,10th With foundation course of JEE and NEET',
+    image: '/images/courses/study.png',
+  },
+  {
+    title: 'Advance Courses for JEE and NEET',
+    image: '/images/courses/jee.png',
+  },
+  {
+    title: 'Other Entrance  Exams NTSC & NDA and others',
+    image: '/images/courses/talent.png',
+  },
+];
 
 export default class CourseSlider extends Component {
   render() {
@@ -67,26 +105,13 @@ export default class CourseSlider extends Component {
             </h5>
           </div>
           <Slider {...settings}>
-            <CourseCard
-              image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTg55f5ZQMzrnRRozjJl9TUZgPj8sgiN7cjuPtm4XUDRswPY51g"
-              title="WEB Development "
-              Subtitle="your text "
-            />
-            <CourseCard
-              image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWNgH4KSVgac1tvU04IUBljT_peJC6DBgycSV2npX6bPhRkGjU"
-              title="APP Development "
-              Subtitle="your text "
-            />
-            <CourseCard
-              image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_VHK6uG5diWQVBQnZlV74to0Uyq0rmghnh_PDgm3IzNw2xXGppQ "
-              title="Airthmatics"
-              Subtitle="your text "
-            />
-            <CourseCard
-              image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIsoyV66dxk_Om-VPmIMwkXfnjRq7C8ObQ3HIPlVA3ykzRcLqm9Q"
-              title="Web Designs"
-              Subtitle="your text "
-            />
+            {data.map(items => (
+              <CourseCard
+                image={items.image}
+                title={items.title}
+                Subtitle={items.Subtitle}
+              />
+            ))}
           </Slider>
         </div>
       </Container>
