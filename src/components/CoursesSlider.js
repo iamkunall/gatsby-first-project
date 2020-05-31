@@ -15,7 +15,6 @@ const Container = styled.div`
     padding-bottom: 2rem;
   }
   .card {
-    height: 35rem;
     width: auto;
   }
 `;

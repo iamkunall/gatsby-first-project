@@ -14,12 +14,18 @@ const CardStyled = styled.div`
   :hover {
     transform: scale(1.1);
   }
+  .card-content {
+    height: 13rem;
+    @media only screen and (max-width: 600px) {
+      height: auto;
+    }
+  }
 `;
 
 const CourseCard = ({ image, title, Subtitle }) => (
   <CardStyled className="card">
     <div className="card-image">
-      <figure className="image is-square">
+      <figure className="image is-5by4">
         <img src={image} alt="Placeholder image" />
       </figure>
     </div>

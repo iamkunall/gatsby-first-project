@@ -1,7 +1,7 @@
 import { createGlobalStyle } from 'styled-components';
 import reset from 'styled-reset-advanced';
 
-const mainBrandColor = '#FF6363';
+const mainBrandColor = '#07C5A1';
 
 export const theme = {
   // It can be liberally applied to your layout as its main identity.
