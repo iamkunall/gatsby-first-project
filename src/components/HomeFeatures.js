@@ -65,28 +65,48 @@ const data = [
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit morbi hendrerit elit',
     icon: 'fas fa-pencil-ruler',
   },
+  {
+    title: 'Personalize Learning',
+    subtitle:
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit morbi hendrerit elit',
+    icon: 'fas fa-pencil-ruler',
+  },
+  {
+    title: 'Personalize Learning',
+    subtitle:
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit morbi hendrerit elit',
+    icon: 'fas fa-pencil-ruler',
+  },
+  {
+    title: 'Personalize Learning',
+    subtitle:
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit morbi hendrerit elit',
+    icon: 'fas fa-pencil-ruler',
+  },
 ];
 
 const HomeFeatures = () => (
   <Container className="section">
     <div className="container has-text-centered">
-      <div>
-        <h1 className="title is-2">What we Provide</h1>
-        <div className="columns">
-          {data.map(items => (
-            <div className="column">
-              <span className="icon hexagon">
-                <i className={items.icon} />
-              </span>
+      <h1 className="title is-2">What we Provide</h1>
+      <div className="columns is-mobile is-centered">
+        <div className="column is-11">
+          <div className="columns is-multiline">
+            {data.map(items => (
+              <div className="column is-4">
+                <span className="icon hexagon">
+                  <i className={items.icon} />
+                </span>
 
-              <div className="card">
-                <h1 className="title is-5 has-text-weight-semibold">
-                  {items.title}
-                </h1>
-                <p>{items.subtitle}</p>
+                <div className="card">
+                  <h1 className="title is-5 has-text-weight-semibold">
+                    {items.title}
+                  </h1>
+                  <p>{items.subtitle}</p>
+                </div>
               </div>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
       </div>
     </div>

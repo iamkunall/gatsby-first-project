@@ -14,22 +14,28 @@ const Team = () => (
     <div className="container">
       <h1 className="title is-2 has-text-centered">MEET THE TEAM</h1>
       <div className="columns  is-multiline ">
-        <div className="column is-6">
+        <div className="column is-3">
           <TeamCard />
         </div>
-        <div className="column is-6">
+        <div className="column is-3">
           <TeamCard />
         </div>
-        <div className="column is-6">
+        <div className="column is-3">
           <TeamCard />
         </div>
-        <div className="column is-6">
+        <div className="column is-3">
           <TeamCard />
         </div>
-        <div className="column is-6">
+        <div className="column is-3">
           <TeamCard />
         </div>
-        <div className="column is-6">
+        <div className="column is-3">
+          <TeamCard />
+        </div>
+        <div className="column is-3">
+          <TeamCard />
+        </div>
+        <div className="column is-3">
           <TeamCard />
         </div>
       </div>

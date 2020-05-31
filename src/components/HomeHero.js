@@ -14,8 +14,10 @@ const HomeHero = () => (
         <div className="hero-body">
           <div className="container">
             <div className="columns">
-              <div className="column is-5 is-flex">
-                <img src="/images/image-two.png" />
+              <div className="column is-5">
+                <figure className="image is-4by3">
+                  <img src="/images/image-two.png" />
+                </figure>
               </div>
               <div className="column">
                 <h1 className="title is-3 is-spaced">S Ramanujan Academy</h1>
