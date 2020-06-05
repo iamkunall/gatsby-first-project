@@ -4,7 +4,7 @@
     "name": "kickoff-sanity"
   },
   "api": {
-    "projectId": "k4leuyup",
+    "projectId": "8y5j9rfi",
     "dataset": "production"
   },
   "plugins": [
@@ -21,10 +21,8 @@
       ]
     }
   },
-  "parts": [
-    {
-      "name": "part:@sanity/base/schema",
-      "path": "./schemas/schema.js"
-    }
-  ]
+  "parts": [{
+    "name": "part:@sanity/base/schema",
+    "path": "./schemas/schema.js"
+  }]
 }
