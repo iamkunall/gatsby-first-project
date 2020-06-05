@@ -12,6 +12,21 @@ module.exports = {
     `gatsby-plugin-sharp`,
     `gatsby-plugin-react-helmet`,
     {
+      resolve: 'gatsby-source-sanity',
+      options: {
+        projectId: '8y5j9rfi',
+        dataset: 'production',
+
+        // a token with read permissions is required
+        // if you have a private dataset
+        token: process.env.MY_SANITY_TOKEN,
+
+        // If the Sanity GraphQL API was deployed using `--tag <name>`,
+        // use `graphqlTag` to specify the tag name. Defaults to `default`.
+        graphqlTag: 'default',
+      },
+    },
+    {
       resolve: 'gatsby-plugin-manifest',
       options: {
         name: config.siteName,

@@ -37,6 +37,10 @@ const GlobalStyle = createGlobalStyle`
     font-family: ${theme.secondaryFontFamily};
   }
 
+  .section{
+    padding:3rem 8rem !important;
+  }
+
 `;
 
 export default GlobalStyle;

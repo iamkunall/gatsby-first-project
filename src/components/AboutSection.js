@@ -6,6 +6,10 @@ const Section = styled.div`
   .title {
     margin-top: 5rem;
   }
+
+  .subtitle {
+    text-align: justify;
+  }
 `;
 
 const AboutSection = () => (
