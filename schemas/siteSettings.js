@@ -14,6 +14,14 @@ export default {
       type: 'string',
     },
     {
+      name: 'heroImage',
+      title: 'Hero Image',
+      type: 'image',
+      options: {
+        hotspot: true,
+      },
+    },
+    {
       name: 'featuresTitle',
       title: 'Features Title',
       type: 'string',
@@ -37,6 +45,14 @@ export default {
       name: 'courseSectionSubtitle',
       title: 'Course Section Subtitle',
       type: 'string',
+    },
+    {
+      name: 'aboutSectionImage',
+      title: 'About Section Image',
+      type: 'image',
+      options: {
+        hotspot: true,
+      },
     },
     {
       name: 'aboutSectionSubtitle',

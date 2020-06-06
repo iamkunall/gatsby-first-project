@@ -65,6 +65,7 @@ export default {
   preview: {
     select: {
       title: 'title',
+      media: 'mainImage',
     },
   },
 };
