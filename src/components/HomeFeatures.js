@@ -46,56 +46,17 @@ const Container = styled.section`
   }
 `;
 
-const data = [
-  {
-    title: 'Personalize Learning',
-    subtitle:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit morbi hendrerit elit',
-    icon: 'fas fa-graduation-cap',
-  },
-  {
-    title: 'Personalize Learning',
-    subtitle:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit morbi hendrerit elit',
-    icon: 'fas fa-university',
-  },
-  {
-    title: 'Personalize Learning',
-    subtitle:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit morbi hendrerit elit',
-    icon: 'fas fa-pencil-ruler',
-  },
-  {
-    title: 'Personalize Learning',
-    subtitle:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit morbi hendrerit elit',
-    icon: 'fas fa-pencil-ruler',
-  },
-  {
-    title: 'Personalize Learning',
-    subtitle:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit morbi hendrerit elit',
-    icon: 'fas fa-pencil-ruler',
-  },
-  {
-    title: 'Personalize Learning',
-    subtitle:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit morbi hendrerit elit',
-    icon: 'fas fa-pencil-ruler',
-  },
-];
-
-const HomeFeatures = () => (
+const HomeFeatures = ({ data }) => (
   <Container className="section">
     <div className="container has-text-centered">
-      <h1 className="title is-2">What we Provide</h1>
+      <h1 className="title is-2">{data.featuresTitle}</h1>
       <div className="columns is-mobile is-centered">
         <div className="column is-11">
           <div className="columns is-multiline">
-            {data.map(items => (
+            {data.featuresPoints.map(items => (
               <div className="column is-4">
                 <span className="icon hexagon">
-                  <i className={items.icon} />
+                  <i className="fas fa-graduation-cap" />
                 </span>
 
                 <div className="card">

@@ -12,7 +12,7 @@ const Section = styled.div`
   }
 `;
 
-const AboutSection = () => (
+const AboutSection = ({ data }) => (
   <Section className="section">
     <div className="container">
       <div className="columns">
@@ -23,12 +23,7 @@ const AboutSection = () => (
         </div>
         <div className="column is-6">
           <h1 className="title is-spaced">About us</h1>
-          <h2 className="subtitle">
-            A simple container to divide your page into{' '}
-            <strong>sections</strong>, like the one you're currently reading A
-            simple container to divide your page into <strong>sections</strong>,
-            like the one you're currently reading
-          </h2>
+          <h2 className="subtitle">{data.aboutSectionSubtitle}</h2>
           <Link to="/about" className="button is-primary">
             LEARN MORE
           </Link>

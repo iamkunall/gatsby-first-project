@@ -10,11 +10,29 @@ import AboutSection from '../components/AboutSection';
 import Testimonials from '../components/Testimonial';
 import Contact from '../components/Contact';
 
-export const Homequery = graphql`
+export const HomeQuery = graphql`
   query {
     sanitySiteSettings {
       homeTitle
       homeSubtitle
+      featuresTitle
+      featuresPoints {
+        title
+        subtitle
+      }
+      courseSectionTitle
+      courseSectionSubtitle
+      aboutSectionSubtitle
+      reviews {
+        _key
+        name
+        comment
+        image {
+          asset {
+            url
+          }
+        }
+      }
     }
   }
 `;
@@ -25,10 +43,10 @@ const IndexPage = ({ data }) => {
     <Layout>
       <Seo title="Home" description="Welcome to GatsbyJs v1" />
       <HomeHero data={home} />
-      <HomeFeatures />
-      <CourseSlider />
-      <AboutSection />
-      <Testimonials />
+      <HomeFeatures data={home} />
+      <CourseSlider data={home} />
+      <AboutSection data={home} />
+      <Testimonials data={home} />
       <Contact />
     </Layout>
   );

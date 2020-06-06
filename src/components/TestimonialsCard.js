@@ -16,16 +16,13 @@ const Wrapper = styled.div`
   }
 `;
 
-const TestimonialsCard = () => (
-  <Wrapper className="has-text-centered">
-    <img src="/images/test.jpg" />
+const TestimonialsCard = ({ data }) => (
+  <Wrapper className="column is-4 has-text-centered">
+    <img src={data.image.asset.url} alt={data.name} />
     <div className="card">
       <div className="card-content">
-        <p className="title is-5">
-          “There are two hard things in computer science: cache invalidation,
-          naming things, and off-by-one errors.”
-        </p>
-        <p className="subtitle">Jeff Atwood</p>
+        <p className="title is-5">{data.comment}</p>
+        <p className="subtitle">{data.name}</p>
       </div>
     </div>
   </Wrapper>
