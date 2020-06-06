@@ -29,6 +29,13 @@ export const HomeQuery = graphql`
       }
       courseSectionTitle
       courseSectionSubtitle
+      aboutSectionImage {
+        asset {
+          fluid {
+            ...GatsbySanityImageFluid
+          }
+        }
+      }
       aboutSectionSubtitle
       reviews {
         _key

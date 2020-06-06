@@ -24,7 +24,7 @@ const HomeHero = ({ data }) => {
             <div className="container">
               <div className="columns">
                 <div className="column is-5">
-                  <Img fluid={data.heroImage.asset.fluid} />
+                  <Img fluid={data.heroImage.asset.fluid} alt="ramanujan" />
                 </div>
                 <div className="column">
                   <h1 className="title is-3 is-spaced">{data.homeTitle}</h1>

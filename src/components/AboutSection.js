@@ -1,4 +1,5 @@
 import React from 'react';
+import Img from 'gatsby-image';
 import styled from 'styled-components';
 import { Link } from 'gatsby';
 
@@ -17,9 +18,7 @@ const AboutSection = ({ data }) => (
     <div className="container">
       <div className="columns">
         <div className="column is-6">
-          <figure className="image is-5by4">
-            <img src="/images/about.png" />
-          </figure>
+          <Img fluid={data.aboutSectionImage.asset.fluid} alt="ramanujan" />
         </div>
         <div className="column is-6">
           <h1 className="title is-spaced">About us</h1>
