@@ -15,6 +15,13 @@ export const HomeQuery = graphql`
     sanitySiteSettings {
       homeTitle
       homeSubtitle
+      heroImage {
+        asset {
+          fluid {
+            ...GatsbySanityImageFluid
+          }
+        }
+      }
       featuresTitle
       featuresPoints {
         title

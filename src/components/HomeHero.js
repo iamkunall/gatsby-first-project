@@ -1,5 +1,5 @@
 import React from 'react';
-
+import Img from 'gatsby-image';
 import styled from 'styled-components';
 
 const Container = styled.div`
@@ -24,9 +24,7 @@ const HomeHero = ({ data }) => {
             <div className="container">
               <div className="columns">
                 <div className="column is-5">
-                  <figure className="image is-4by3">
-                    <img src="/images/image-two.png" />
-                  </figure>
+                  <Img fluid={data.heroImage.asset.fluid} />
                 </div>
                 <div className="column">
                   <h1 className="title is-3 is-spaced">{data.homeTitle}</h1>

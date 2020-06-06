@@ -1,5 +1,7 @@
 const config = require('./src/utils/config.js');
 
+const path = require(`path`);
+
 module.exports = {
   siteMetadata: {
     title: config.siteName,
@@ -10,6 +12,7 @@ module.exports = {
   plugins: [
     `gatsby-plugin-styled-components`,
     `gatsby-plugin-sharp`,
+    `gatsby-transformer-sharp`,
     `gatsby-plugin-react-helmet`,
     {
       resolve: 'gatsby-source-sanity',
@@ -36,6 +39,13 @@ module.exports = {
         theme_color: config.themeColor,
         display: 'minimal-ui',
         icon: './static/images/logo-1024.png',
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `images`,
+        path: path.join(__dirname, `static`, `images`),
       },
     },
     `gatsby-plugin-offline`,
