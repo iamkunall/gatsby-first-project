@@ -1,10 +1,10 @@
 module.exports = {
   DEBUG: process.env.NODE_ENV === 'development',
 
-  siteName: 'Kickoff GatsbyJs',
-  author: 'Parminder Klair',
+  siteName: 'S.Ramanujan Academy',
+  author: 'kunal sharma',
   description: 'A starting point using ReactJs, bundled with awesome GatsbyJs.',
-  siteUrl: 'http://kickoff-gatsbyjs.netlify.com',
+  siteUrl: 'https://www.sramanujan.in/',
   logo: '/images/logo-1024.png',
 
   telephone: '+1-123-123-123',

@@ -15,25 +15,25 @@ const CardStyled = styled.div`
     transform: scale(1.1);
   }
   .card-content {
-    height: 13rem;
+    height: 15rem;
     @media only screen and (max-width: 600px) {
       height: auto;
     }
   }
 `;
 
-const CourseCard = ({ image, title, Subtitle }) => (
+const CourseCard = ({ data }) => (
   <CardStyled className="card">
     <div className="card-image">
       <figure className="image is-5by4">
-        <img src={image} alt="Placeholder image" />
+        <img src={data.mainImage.asset.url} alt="ramanujan" />
       </figure>
     </div>
     <div className="card-content">
       <div className="content has-text-centered">
-        <h4 className="title is-4 is-spaced">{title}</h4>
-        <h5 className="subtitle is-5 has-text-weight-light">{Subtitle}</h5>
-        <Link to="/individualCourses" className="button is-primary">
+        <h4 className="title is-4 is-spaced">{data.title}</h4>
+        <h5 className="subtitle is-5 has-text-weight-light">{data.Subtitle}</h5>
+        <Link to={`/course/${data.slug.current}`} className="button is-primary">
           About this Course
         </Link>
       </div>

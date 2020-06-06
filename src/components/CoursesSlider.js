@@ -19,37 +19,6 @@ const Container = styled.div`
   }
 `;
 
-const data = [
-  {
-    title: 'Class 11th Non-Medical',
-    image: '/images/courses/maths.png',
-  },
-  {
-    title: 'Class 11th Medical',
-    image: '/images/courses/biolog-11.jpg',
-  },
-  {
-    title: 'Class 12th Non-Medical',
-    image: '/images/courses/maths-12.png',
-  },
-  {
-    title: 'Class 12th Medical',
-    image: '/images/courses/medical-12.png',
-  },
-  {
-    title: '8th,9th,10th With foundation course of JEE and NEET',
-    image: '/images/courses/study.png',
-  },
-  {
-    title: 'Advance Courses for JEE and NEET',
-    image: '/images/courses/jee.png',
-  },
-  {
-    title: 'Other Entrance  Exams NTSC & NDA and others',
-    image: '/images/courses/talent.png',
-  },
-];
-
 export default class CourseSlider extends Component {
   render() {
     const settings = {
@@ -91,6 +60,7 @@ export default class CourseSlider extends Component {
         },
       ],
     };
+    const { data, value } = this.props;
     return (
       <Container className="section">
         <div className="container has-text-centered">
@@ -105,11 +75,7 @@ export default class CourseSlider extends Component {
           </div>
           <Slider {...settings}>
             {data.map(items => (
-              <CourseCard
-                image={items.image}
-                title={items.title}
-                Subtitle={items.Subtitle}
-              />
+              <CourseCard key={items.node.id} data={items.node} />
             ))}
           </Slider>
         </div>

@@ -48,17 +48,35 @@ export const HomeQuery = graphql`
         }
       }
     }
+    allSanityCourses {
+      edges {
+        node {
+          id
+          slug {
+            current
+          }
+          title
+          Subtitle
+          mainImage {
+            asset {
+              url
+            }
+          }
+        }
+      }
+    }
   }
 `;
 
 const IndexPage = ({ data }) => {
   const home = data.sanitySiteSettings;
+  const courses = data.allSanityCourses.edges;
   return (
     <Layout>
-      <Seo title="Home" description="Welcome to GatsbyJs v1" />
+      <Seo title="Home" description="Welcome to Ramanujan Academy" />
       <HomeHero data={home} />
       <HomeFeatures data={home} />
-      <CourseSlider data={home} />
+      <CourseSlider data={courses} value={data} />
       <AboutSection data={home} />
       <Testimonials data={home} />
       <Contact />

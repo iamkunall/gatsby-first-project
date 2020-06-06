@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import BlockContent from '@sanity/block-content-to-react';
 
 const Container = styled.div`
   .point {
@@ -13,68 +14,33 @@ const Container = styled.div`
   }
 `;
 
-const points = [
-  {
-    id: 1,
-    value:
-      'Understand how investment banking firms work and what they can do to help your business.',
-  },
-  {
-    id: 2,
-    value:
-      'Understand how investment banking firms work and what they can do to help your business.',
-  },
-  {
-    id: 3,
-    value:
-      'Understand how investment banking firms work and what they can do to help your business.',
-  },
-  {
-    id: 4,
-    value:
-      'Understand how investment banking firms work and what they can do to help your business.',
-  },
-];
-
-const DetailsSection = () => {
+const DetailsSection = ({ data }) => {
   return (
     <Container className="section">
       <div className="container">
         <h1 className="title is-3 has-text-primary">What you'll learn</h1>
-        <div className="columns">
-          <div className="column">
-            {points.map(data => (
+        <div className="columns is-multiline">
+          {data.points.map(item => (
+            <div className="column is-half">
               <div className="point">
                 <span className="icon has-text-info is-inline-block">
                   <i className="fas fa-check-circle" />
                 </span>
-                <p className="subtitle is-4 is-inline">{data.value}</p>
+                <p className="subtitle is-4 is-inline">{item}</p>
               </div>
-            ))}
-          </div>
-          <div className="column">
-            {points.map(data => (
-              <div className="point">
-                <span className="icon has-text-info is-inline-block">
-                  <i className="fas fa-check-circle" />
-                </span>
-                <p className="subtitle is-4 is-inline">{data.value}</p>
-              </div>
-            ))}
-          </div>
+            </div>
+          ))}
         </div>
+
         <h1 className="title is-3 has-text-primary is-spaced">Description</h1>
         <h1 className="subtitle is-4 test">
-          S Ramanujan Academy is renowned for Post. Sr. Sec. Coaching Classes
-          for Medical & Engineering Streams. Every Year more then 1 Lac of
-          students from all over India join various institute for the coaching.
-          S Ramanujan Academy Jalandhar Started in March-2008, has a tradition
-          of excellence in research and teaching, we build on the past but are
-          not constrained by it
+          <BlockContent blocks={data._rawDescription} />
         </h1>
         <h1 className="title is-3 has-text-primary">Requirements</h1>
         <ul>
-          <li>Nothing except a positive attitude! : ) </li>
+          {data.requirements.map(item => (
+            <li className="subtitle is-5">{item} </li>
+          ))}
         </ul>
       </div>
     </Container>
