@@ -43,6 +43,16 @@ export default {
       title: 'About Section Subtitle',
       type: 'string',
     },
+    {
+      name: 'reviews',
+      title: 'Reviews',
+      type: 'array',
+      of: [
+        {
+          type: 'review',
+        },
+      ],
+    },
   ],
 
   preview: {

@@ -9,7 +9,7 @@ import siteSettings from './siteSettings';
 import blockContent from './blockContent';
 import category from './category';
 import courses from './courses';
-import author from './author';
+import review from './review';
 import page from './page';
 import featuresPoint from './featuresPoint';
 
@@ -25,7 +25,7 @@ export default createSchema({
     // in the studio.
     // page,
     courses,
-    // author,
+    review,
     // category,
     siteSettings,
     featuresPoint,
