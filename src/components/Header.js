@@ -33,10 +33,11 @@ const Section = styled.section`
     }
   }
   .navbar-burger {
-    background-color: #1c1323;
-    color: #fff;
+    background-color: ${props => props.theme.mainBrandColor};
+    color: #000000;
     opacity: 0.6;
     border-radius: 4px;
+    margin-top: 3rem;
   }
   .icon {
     color: ${props => props.theme.mainBrandColor};

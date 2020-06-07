@@ -38,7 +38,9 @@ const GlobalStyle = createGlobalStyle`
   }
 
   .section{
-    padding:3rem 8rem !important;
+    @media only screen and (min-width: 1023px) {
+      padding:3rem 8rem !important;
+    }
   }
 
 `;
