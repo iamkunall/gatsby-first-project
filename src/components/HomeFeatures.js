@@ -14,7 +14,7 @@ const Container = styled.section`
     position: relative;
     width: 96px;
     height: 55.43px;
-    background-color: ${props => props.theme.mainBrandColor};
+    background-color: #07c5a1;
     margin: 27.71px 0;
   }
 
@@ -29,20 +29,21 @@ const Container = styled.section`
 
   .hexagon:before {
     bottom: 100%;
-    border-bottom: 27.71px solid ${props => props.theme.mainBrandColor};
+    border-bottom: 27.71px solid #07c5a1;
   }
 
   .hexagon:after {
     top: 100%;
     width: 0;
-    border-top: 27.71px solid ${props => props.theme.mainBrandColor};
+    border-top: 27.71px solid #07c5a1;
   }
   .card {
     margin-top: -3rem;
     z-index: -1;
     padding: 4.5rem 1rem 3rem 1rem;
-    height: 15rem;
+    height: 19rem;
     border-radius: 1rem;
+    box-shadow: 2px 2px 5px 3px #07c5a150;
   }
 `;
 
@@ -58,12 +59,11 @@ const HomeFeatures = ({ data }) => (
                 <span className="icon hexagon">
                   <i className="fas fa-graduation-cap" />
                 </span>
-
                 <div className="card">
-                  <h1 className="title is-5 has-text-weight-semibold">
+                  <h1 className="title is-5 has-text-weight-bold">
                     {items.title}
                   </h1>
-                  <p>{items.subtitle}</p>
+                  <p className="subtitle is-5">{items.subtitle}</p>
                 </div>
               </div>
             ))}
