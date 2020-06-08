@@ -12,6 +12,7 @@ export const theme = {
   primaryColor: mainBrandColor,
   borderColor: '#e0e6ef',
   backgroundColor: '#FFFFFF',
+  backgroundLite: '#EAF0F1',
   fontSize: 16,
   fontSizeSmall: 14,
   fontSizeExtraSmall: 12,

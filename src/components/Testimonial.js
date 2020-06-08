@@ -22,7 +22,7 @@ const Section = styled.div`
 const Testimonials = ({ data }) => (
   <Section className="section">
     <div className="container">
-      <h1 className="title is-2 has-text-centered">OUR STARS</h1>
+      <h1 className="title is-2 has-text-centered">Reviews</h1>
       <div className="columns is-multiline">
         {data.reviews.map(item => (
           <TestimonialsCard key={item._key} data={item} />

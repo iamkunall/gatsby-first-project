@@ -7,7 +7,7 @@ const CardStyled = styled.div`
   border-radius: 1rem;
   margin: 1rem;
   transition: all 0.5s;
-  background-color: #07c5a180 !important;
+  background-color: #758aa210 !important;
   box-shadow: 2px 2px 5px 5px #3c40c650;
   img {
     border-top-left-radius: 1rem;
@@ -17,7 +17,7 @@ const CardStyled = styled.div`
     transform: scale(1.1);
   }
   .content {
-    height: 8rem;
+    height: 10rem;
     @media only screen and (max-width: 600px) {
       height: auto;
     }

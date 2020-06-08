@@ -10,9 +10,6 @@ const Container = styled.div`
   .hero-body {
     padding-top: 0.5rem !important;
   }
-  .subtitle {
-    text-align: justify !important;
-  }
 `;
 
 const HomeHero = ({ data }) => {
@@ -23,7 +20,7 @@ const HomeHero = ({ data }) => {
           <div className="hero-body">
             <div className="container">
               <div className="columns">
-                <div className="column is-5">
+                <div className="column is-6">
                   <Img fluid={data.heroImage.asset.fluid} alt="ramanujan" />
                 </div>
                 <div className="column">
