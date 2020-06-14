@@ -2,15 +2,17 @@ import React from 'react';
 import styled from 'styled-components';
 import BlockContent from '@sanity/block-content-to-react';
 
-const Container = styled.div`
-  .point {
-    margin-top: 30px;
+const Container = styled.section`
+  padding-top: 0rem !important;
+  .title {
+    margin: 25px 0px;
   }
-  .text {
-    margin: 30px 0 50px 0;
-  }
-  .test {
-    margin-bottom: 50px;
+`;
+
+const Content = styled(BlockContent)`
+  margin-bottom: 60px;
+  p {
+    margin: 10px 0px;
   }
 `;
 
@@ -18,6 +20,10 @@ const DetailsSection = ({ data }) => {
   return (
     <Container className="section">
       <div className="container">
+        <h1 className="title is-3 has-text-primary is-spaced">Description</h1>
+        <h1 className="subtitle is-4 text">
+          <Content blocks={data._rawDescription} />
+        </h1>
         <h1 className="title is-3 has-text-primary">What you'll learn</h1>
         <div className="columns is-multiline">
           {data.points.map(item => (
@@ -31,11 +37,6 @@ const DetailsSection = ({ data }) => {
             </div>
           ))}
         </div>
-
-        <h1 className="title is-3 has-text-primary is-spaced">Description</h1>
-        <h1 className="subtitle is-4 test">
-          <BlockContent blocks={data._rawDescription} />
-        </h1>
         <h1 className="title is-3 has-text-primary">Requirements</h1>
         <ul>
           {data.requirements.map(item => (
