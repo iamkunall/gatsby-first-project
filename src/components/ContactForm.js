@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 const Section = styled.div`
-  border: 2px solid ${props => props.theme.mainBrandColor};
+  box-shadow: -1px 7px 24px -8px rgba(46, 74, 117, 1);
   padding: 1rem;
   border-radius: 1rem;
   .title {
@@ -51,20 +51,6 @@ const ContactForm = () => (
       </div>
     </div>
 
-    <div className="field">
-      <label className="label">Message</label>
-      <div className="control">
-        <textarea className="textarea" placeholder="Textarea" />
-      </div>
-    </div>
-    <div className="field">
-      <div className="control">
-        <label className="checkbox">
-          <input type="checkbox" />I agree to the{' '}
-          <a href="#">terms and conditions</a>
-        </label>
-      </div>
-    </div>
     <div className="field is-grouped has-text-centred">
       <div className="control">
         <button className="button is-link">Submit</button>

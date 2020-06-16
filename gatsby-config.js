@@ -28,6 +28,11 @@ module.exports = {
         // use `graphqlTag` to specify the tag name. Defaults to `default`.
         graphqlTag: 'default',
       },
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: 'G-8SRMNHP10B',
+        head: true,
+      },
     },
     {
       resolve: 'gatsby-plugin-manifest',
