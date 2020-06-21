@@ -4,6 +4,7 @@ import styled, { ThemeProvider } from 'styled-components';
 
 import GlobalStyle, { theme } from '../utils/theme';
 import config from '../utils/config';
+import Dots from './Particles';
 import Header from './Header';
 import Footer from './Footer';
 
@@ -22,7 +23,10 @@ const IndexLayout = ({ children, hideHeader }) => (
       </Helmet>
       <GlobalStyle />
       {!hideHeader && <Header />}
-      <Container>{children}</Container>
+      <Container>
+        <Dots />
+        {children}
+      </Container>
       <Footer />
     </>
   </ThemeProvider>

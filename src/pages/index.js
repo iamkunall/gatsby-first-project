@@ -3,6 +3,7 @@ import { graphql } from 'gatsby';
 
 import Seo from '../components/Seo';
 import Layout from '../components/Layout';
+import Dots from '../components/Particles';
 import HomeHero from '../components/HomeHero';
 import HomeFeatures from '../components/HomeFeatures';
 import CourseSlider from '../components/CoursesSlider';

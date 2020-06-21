@@ -7,9 +7,10 @@ module.exports = {
   siteUrl: 'https://www.sramanujan.in/',
   logo: '/images/logo-1024.png',
 
-  telephone: '+1-123-123-123',
-  email: 'john@doe.com',
-  location: 'California, USA',
+  telephone: '+91 90412 64429',
+  email: 'sramanujanedu@gmail.com',
+  location:
+    'Hno. 12-A street no.3, Professor Colony ,Joginder Nagar, Ramamandi , Jalandhar ,Punjab',
   twitter: '@NAME-HERE',
   fbUserId: '@NAME-HERE',
   fbAppID: '@NAME-HERE',

@@ -1,6 +1,5 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Link } from 'gatsby';
 
 import ContactForm from './ContactForm';
 
@@ -35,19 +34,22 @@ const Contact = () => (
               <span role="img" aria-label="Round Pushpin">
                 📍
               </span>{' '}
-              Location
+              Hno. 12-A street no.3, Professor Colony ,Joginder Nagar ,Rama
+              Mandi Jalandhar ,Punjab
             </p>
             <p className="subtitle is-4">
               <span role="img" aria-label="e-mail">
                 📧
               </span>{' '}
-              <a href="/">email</a>
+              <a href="mailto:sramanujanedu@gmail.com">
+                sramanujanedu@gmail.com
+              </a>
             </p>
             <p className="subtitle is-4">
               <span role="img" aria-label="telephone">
                 ☎️
               </span>{' '}
-              <a href="/">telephone</a>
+              <a href="tel:+91 90412 64429">+91 90412 64429</a>
             </p>
           </h1>
         </div>

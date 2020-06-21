@@ -4,6 +4,8 @@ import styled from 'styled-components';
 
 const Container = styled.div`
   padding-top: 0.5rem !important;
+  position: relative;
+
   .title {
     margin-top: 3rem;
   }
