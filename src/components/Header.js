@@ -40,13 +40,15 @@ const Section = styled.section`
     margin-top: 3rem;
   }
   .icon {
-    color: ${props => props.theme.mainBrandColor};
     font-size: 2rem;
-    margin-right: 0.75rem;
-    transition: color 0.5s;
+    margin-right: 1rem;
+    transition: all 0.25s;
     :hover {
-      color: #000000;
+      font-size: 2.5rem;
     }
+  }
+  .insta {
+    color: #8a3ab9;
   }
 `;
 
@@ -123,15 +125,34 @@ export default class Header extends React.Component {
               </div>
               <div className="navbar-end">
                 <div className="navbar-item">
-                  <div className="icon ">
+                  <a
+                    href="https://www.instagram.com/invites/contact/?i=14szat4i221q3&utm_content=es1jb54"
+                    target="_blank"
+                    className="icon insta"
+                  >
+                    <i className="fab fa-instagram" />
+                  </a>
+                  <a
+                    href="https://www.facebook.com/s.ramanujan.77715"
+                    target="_blank"
+                    className="icon has-text-link"
+                  >
                     <i className="fab fa-facebook-square" />
-                  </div>
-                  <div className="icon">
+                  </a>
+                  <a
+                    href="https://twitter.com/sramanujanacad1/status/1277323791186591744?s=12"
+                    target="_blank"
+                    className="icon has-text-info"
+                  >
                     <i className="fab fa-twitter-square" />
-                  </div>
-                  <div className="icon">
-                    <i className="fab fa-linkedin" />
-                  </div>
+                  </a>
+                  <a
+                    href="https://www.youtube.com/channel/UCKZdAXaY_A_QWn85l3lkZzQ"
+                    target="_blank"
+                    className="icon has-text-danger"
+                  >
+                    <i className="fab fa-youtube" />
+                  </a>
                 </div>
               </div>
             </div>

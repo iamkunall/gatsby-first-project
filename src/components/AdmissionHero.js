@@ -25,22 +25,24 @@ const AdmissionHero = () => (
             <h1 className="title is-4 is-spaced">STEPS</h1>
             <ol>
               <li className="subtitle">
-                Lorem ipsum dolor sit amet, mi ut praesent nonummy erat, lacus
-                eu accumsan semper Lorem ipsum dolor sit
+                Click on APPLY ONLINE to Register yourself.
               </li>
               <li className="subtitle">
-                Lorem ipsum dolor sit amet, mi ut praesent nonummy erat, lacus
-                eu accumsan semper Lorem ipsum dolor sit
+                Fill the Online Application Form and submit as prescribed.
               </li>
               <li className="subtitle">
-                Lorem ipsum dolor sit amet, mi ut praesent nonummy erat, lacus
-                eu accumsan semper Lorem ipsum dolor sit
+                We will get back to you as Soon as Possible
               </li>
             </ol>
             <div className="has-text-centered">
-              <button type="button" className="button is-info is-medium">
+              <a
+                type="button"
+                className="button is-info is-medium"
+                href="https://docs.google.com/forms/d/e/1FAIpQLSfFuV3HzJfP11F6ueMZA_fHxEaXRe5VVPXsv68ZrXgV0ZgWjQ/viewform?usp=sf_link"
+                target="blank"
+              >
                 APPLY ONLINE
-              </button>
+              </a>
             </div>
           </div>
         </div>
@@ -54,18 +56,18 @@ const AdmissionHero = () => (
             <h1 className="title is-4 is-spaced">STEPS</h1>
             <ol>
               <li className="subtitle">
-                Lorem ipsum dolor sit amet, mi ut praesent nonummy erat, lacus
-                eu accumsan semper Lorem ipsum dolor sit
-              </li>
-              <li className="subtitle">
-                Lorem ipsum dolor sit amet, mi ut praesent nonummy erat, lacus
-                eu accumsan semper Lorem ipsum dolor sit
+                You can visit our academy to register yourself with our latest
+                Courses.
               </li>
             </ol>
             <div className="has-text-centered">
-              <Link to="/contact" className="button is-warning is-medium">
-                CONTACT
-              </Link>
+              <a
+                href="https://www.google.com/maps/search/ramanujan+academy+jalandhar/@31.3169217,75.624686,20z"
+                className="button is-warning is-medium"
+                target="_blank"
+              >
+                Get Directions
+              </a>
             </div>
           </div>
         </div>
