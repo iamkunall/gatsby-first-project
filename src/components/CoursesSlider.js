@@ -66,12 +66,12 @@ export default class CourseSlider extends Component {
         <div className="container has-text-centered">
           <div className="wrapper">
             <h1 className="title is-2 is-spaced">Popular Courses</h1>
-            <h5 className="subtitle is-5">
+            {/* <h5 className="subtitle is-5">
               <span>
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                 Officia, id?
               </span>
-            </h5>
+            </h5> */}
           </div>
           <Slider {...settings}>
             {data.map(items => (

@@ -16,6 +16,12 @@ const Section = styled.div`
   }
 `;
 
+const encode = data => {
+  return Object.keys(data)
+    .map(key => `${encodeURIComponent(key)}=${encodeURIComponent(data[key])}`)
+    .join('&');
+};
+
 const ContactForm = () => (
   <Section>
     <h1 className="title is-2 has-text-centered">Contact Us</h1>
@@ -31,7 +37,11 @@ const ContactForm = () => (
         <div className="field">
           <label className="label">Conatct Number</label>
           <div className="control has-icons-left">
-            <input className="input" type="Number" placeholder="Text input" />
+            <input
+              className="input"
+              type="Number"
+              placeholder="Conatct Number"
+            />
             <span className="icon is-small is-left">
               <i className="fas fa-user" />
             </span>

@@ -32,24 +32,23 @@ const Contact = () => (
         <div className="columns is-centered">
           <div className="column is-two-fifths">
             <h2 className="title is-1 has-text-weight-bold">Address</h2>
-            <p>
-              We’re as accessible as your good neighbour. Feel free
-              <br />
-              to give us a shout.
+            <p className="title is-5 has-text-weight-bold">
+              We’re as accessible as your good neighbour. Feel free to give us a
+              shout.
             </p>
-            <p>
+            <p className="title is-5 has-text-weight-bold">
               <span role="img" aria-label="Round Pushpin">
                 📍
               </span>{' '}
               {config.location}
             </p>
-            <p className="is-4">
+            <p className="title is-5 has-text-weight-bold">
               <span role="img" aria-label="e-mail">
                 📧
               </span>{' '}
               <a href={`mailto:${config.email}`}>{config.email}</a>
             </p>
-            <p>
+            <p className="title is-5 has-text-weight-bold">
               <span role="img" aria-label="telephone">
                 ☎️
               </span>{' '}

@@ -67,27 +67,28 @@ const Footer = () => (
         <div className="column is-8">
           <div className="columns">
             <div className="column">
-              <Link to="/" className="title is-5">
+              <a
+                href="https://forms.gle/obPg1chSSeu5RwRR9"
+                target="_blank"
+                className="title is-5"
+              >
                 Scholarship Test
+              </a>
+            </div>
+            <div className="column">
+              <Link to="/courses" className="title is-5">
+                Courses Offered
               </Link>
             </div>
             <div className="column">
-              <Link to="/" className="title is-5">
-                Courses we Offered
-              </Link>
-            </div>
-            <div className="column">
-              <Link to="/" className="title is-5">
+              <Link to="/about" className="title is-5">
                 Join us
               </Link>
             </div>
           </div>
         </div>
       </div>
-      <p>
-        © 2020 Ramanujan academy | Made with ❤️ in Punjab, India, and on the
-        Internet.
-      </p>
+      <p>© 2020 Ramanujan academy</p>
     </div>
   </StyledFooter>
 );
