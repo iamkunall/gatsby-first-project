@@ -29,6 +29,7 @@ export const CoursesQuery = graphql`
 
 const CoursesPage = ({ data }) => {
   const courses = data.allSanityCourses.edges;
+  console.log(courses);
   return (
     <Layout>
       <Seo title="Courses" description="Welcome to Ramanujan Academy" />

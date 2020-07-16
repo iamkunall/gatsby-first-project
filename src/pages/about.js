@@ -10,7 +10,7 @@ export default class about extends React.Component {
     return (
       <Layout>
         <Seo title="Home" description="Welcome to GatsbyJs v1" />
-        <AboutHero />
+        {/* <AboutHero /> */}
         <Team />
       </Layout>
     );
