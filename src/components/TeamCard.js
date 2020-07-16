@@ -18,7 +18,7 @@ const TeamCard = ({ data }) => (
     <div className="card">
       <div className="card-image">
         <figure className="image is-square">
-          <img src={data.pik} alt="Placeholder image" />
+          <img src={data.pik} alt="sramanujan Academy" />
         </figure>
       </div>
       <div className="card-content">

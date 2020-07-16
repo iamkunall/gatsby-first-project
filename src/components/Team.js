@@ -26,19 +26,19 @@ const teamData = [
   {
     id: 3,
     name: 'Jagdeep Singh',
-    subjects: 'Specialization in Physics',
+    subjects: 'Specialization in Physics with 3 years experience',
     pik: require('../../static/images/team/jagdeep.jpg'),
   },
   {
     id: 4,
     name: 'Pearl',
-    subjects: 'Specialization in  Biology & Chemistry',
+    subjects: 'Specialization in  Biology & Chemistry with 3 years experience',
     pik: require('../../static/images/team/pearl.jpg'),
   },
   {
     id: 5,
-    name: 'Manpreet',
-    subjects: 'specialization in Mathematics',
+    name: 'Manpreet Kaur',
+    subjects: 'specialization in Mathematics with 2 years experience ',
     pik: require('../../static/images/team/manpreet.jpg'),
   },
   {
