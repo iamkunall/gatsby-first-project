@@ -32,7 +32,7 @@ const CoursesHero = ({ data }) => (
         </div>
         <div className="column is-5">
           <figure className="image is-5by4">
-            <img src={data.mainImage.asset.url} alt="ramanujan" />
+            <img src={data.mainImage.asset.url} alt="sramanujan academy" />
           </figure>
         </div>
       </div>

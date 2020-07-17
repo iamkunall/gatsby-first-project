@@ -5,9 +5,6 @@ import styled from 'styled-components';
 
 const Container = styled.div`
   padding: 0rem 5rem;
-  img {
-    height: 35rem;
-  }
   .carousel .slide {
     background: #ffff !important;
   }
@@ -18,7 +15,7 @@ const HomeHeroSlider = () => {
     <Container>
       <Carousel
         showStatus={false}
-        // autoPlay
+        autoPlay
         infiniteLoop
         stopOnHover
         interval={3000}
@@ -28,30 +25,30 @@ const HomeHeroSlider = () => {
         <div>
           <div className="columns">
             <div className="column">
-              <img src="/images/students/first.jpg" alt="hello" />
+              <img src="/images/students/first.jpg" alt="sramanujan academy" />
             </div>
             <div className="column">
-              <img src="/images/students/second.jpg" alt="hello" />
-            </div>
-          </div>
-        </div>
-        <div>
-          <div className="columns">
-            <div className="column">
-              <img src="/images/students/third.jpg" alt="hello" />
-            </div>
-            <div className="column">
-              <img src="/images/students/fourth.jpg" alt="hello" />
+              <img src="/images/students/second.jpg" alt="sramanujan academy" />
             </div>
           </div>
         </div>
         <div>
           <div className="columns">
             <div className="column">
-              <img src="/images/students/fifth.jpg" alt="hello" />
+              <img src="/images/students/third.jpg" alt="sramanujan academy" />
             </div>
             <div className="column">
-              <img src="/images/students/test.png" alt="hello" />
+              <img src="/images/students/fourth.jpg" alt="sramanujan academy" />
+            </div>
+          </div>
+        </div>
+        <div>
+          <div className="columns">
+            <div className="column">
+              <img src="/images/students/fifth.jpg" alt="sramanujan academy" />
+            </div>
+            <div className="column">
+              <img src="/images/students/six.jpg" alt="sramanujan academy" />
             </div>
           </div>
         </div>

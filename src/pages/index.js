@@ -75,7 +75,7 @@ const IndexPage = ({ data }) => {
   const courses = data.allSanityCourses.edges;
   return (
     <Layout>
-      <Seo title="Home" description="Welcome to Ramanujan Academy" />
+      <Seo title="Home" description="Welcome to SRamanujan Academy" />
       <HomeHero data={home} />
       <HomeHeroSlider />
       <HomeFeatures data={home} />

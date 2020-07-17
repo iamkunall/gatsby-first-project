@@ -18,7 +18,10 @@ const AboutSection = ({ data }) => (
     <div className="container">
       <div className="columns">
         <div className="column is-6">
-          <Img fluid={data.aboutSectionImage.asset.fluid} alt="ramanujan" />
+          <Img
+            fluid={data.aboutSectionImage.asset.fluid}
+            alt="sramanujan academy"
+          />
         </div>
         <div className="column is-6">
           <h1 className="title is-spaced">About us</h1>

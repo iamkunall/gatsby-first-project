@@ -34,7 +34,7 @@ const CourseCard = ({ data }) => (
   <CardStyled className="card">
     <div className="card-image">
       <figure className="image is-5by4">
-        <img src={data.mainImage.asset.url} alt="ramanujan" />
+        <img src={data.mainImage.asset.url} alt="sramanujan academy" />
       </figure>
     </div>
     <div className="card-content has-text-centered">

@@ -33,7 +33,7 @@ const Footer = () => (
   <StyledFooter className="footer">
     <div className="content has-text-centered">
       <Link to="/" className="is-block">
-        <img src="/images/footer-logo.png" alt="site logo" />
+        <img src="/images/footer-logo.png" alt="sramanujan academy" />
       </Link>
       <a
         href="https://www.instagram.com/invites/contact/?i=14szat4i221q3&utm_content=es1jb54"

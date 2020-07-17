@@ -7,6 +7,9 @@ const Container = styled.section`
   .title {
     margin: 25px 0px;
   }
+  .has-text-centered {
+    margin-top: 50px;
+  }
 `;
 
 const Content = styled(BlockContent)`
@@ -43,6 +46,16 @@ const DetailsSection = ({ data }) => {
             <li className="subtitle is-5">{item} </li>
           ))}
         </ul>
+        <div className="has-text-centered">
+          <a
+            type="button"
+            className="button is-info is-medium"
+            href="https://docs.google.com/forms/d/e/1FAIpQLSfFuV3HzJfP11F6ueMZA_fHxEaXRe5VVPXsv68ZrXgV0ZgWjQ/viewform?usp=sf_link"
+            target="blank"
+          >
+            APPLY ONLINE
+          </a>
+        </div>
       </div>
     </Container>
   );

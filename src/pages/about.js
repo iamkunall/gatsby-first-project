@@ -9,9 +9,9 @@ export default class about extends React.Component {
   render() {
     return (
       <Layout>
-        <Seo title="Home" description="Welcome to GatsbyJs v1" />
+        <Seo title="about" description="Welcome to SRamanujan Academy" />
         <AboutHero />
-        <Team />
+        {/* <Team /> */}
       </Layout>
     );
   }
