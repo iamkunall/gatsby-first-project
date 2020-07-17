@@ -5,6 +5,7 @@ import Seo from '../components/Seo';
 import Layout from '../components/Layout';
 import Dots from '../components/Particles';
 import HomeHero from '../components/HomeHero';
+import HomeHeroSlider from '../components/HomeHeroSlider';
 import HomeFeatures from '../components/HomeFeatures';
 import CourseSlider from '../components/CoursesSlider';
 import AboutSection from '../components/AboutSection';
@@ -76,6 +77,7 @@ const IndexPage = ({ data }) => {
     <Layout>
       <Seo title="Home" description="Welcome to Ramanujan Academy" />
       <HomeHero data={home} />
+      <HomeHeroSlider />
       <HomeFeatures data={home} />
       <CourseSlider data={courses} value={data} />
       <AboutSection data={home} />
