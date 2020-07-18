@@ -24,7 +24,7 @@ const IndexLayout = ({ children, hideHeader }) => (
       <GlobalStyle />
       {!hideHeader && <Header />}
       <Container>
-        {/* <Dots /> */}
+        <Dots />
         {children}
       </Container>
       <Footer />
