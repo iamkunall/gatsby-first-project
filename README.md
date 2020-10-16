@@ -2,7 +2,7 @@
 
 A starting point using ReactJs, bundled with awesome GatsbyJs v2.
 
-[Demo](https://kickoff-gatsbyjs.netlify.com/)
+[Live](https://www.sramanujan.in/)
 
 ## Stack
 
