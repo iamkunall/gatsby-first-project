@@ -82,7 +82,7 @@ export default class Header extends React.Component {
           >
             <div className="navbar-brand">
               <Link className="navbar-item" to="/">
-                <img src="/images/logo.jpg" alt="sramanujan academy" />
+                <img src="/images/logo.png" alt="sramanujan academy" />
               </Link>
               <a
                 href="#"

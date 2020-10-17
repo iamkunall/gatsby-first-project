@@ -88,7 +88,7 @@ const Footer = () => (
           </div>
         </div>
       </div>
-      <p>© 2020 Ramanujan academy</p>
+      <p>© 2020 S Ramanujan Academy</p>
     </div>
   </StyledFooter>
 );

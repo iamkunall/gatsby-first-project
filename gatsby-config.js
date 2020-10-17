@@ -38,7 +38,7 @@ module.exports = {
         background_color: config.backgroundColor,
         theme_color: config.themeColor,
         display: 'minimal-ui',
-        icon: './static/images/logo.jpg',
+        icon: './static/images/logo.png',
       },
     },
     {
